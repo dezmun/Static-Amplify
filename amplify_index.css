@@ -1,13 +1,35 @@
 body {
-  background-color: #4D4E51;
+  background-color: #283252;
 }
-
-p.ex1 {
-  color: white;
-  text-align: center;
+/*Main Title*/
+div.titlebar{
+	background-color: #05060A;
+	color: white;
+	text-align: center;
+	font-family: "Lucida Console";
+	font-size: 20px;
 }
-
-p {
-  font-family: verdana;
-  font-size: 20px;
+/*Tab Links*/
+div.tabs{
+	overflow: hidden;
+	background-color: #522832;
+	font-family: "Lucida Console";
+}
+div.tabs button{
+	cursor: crosshair;
+	overflow: hidden;
+	background-color: #522832;
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	font-size: 20px;
+}
+/*tab hover*/
+.tabs button:hover{
+	background-color: #05060A;
+	color: white;
+	border: none;
+	outline: none;
+	font-family: "Lucida Console";
+	font-size: 21px;	
 }
