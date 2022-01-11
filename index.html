@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="amplify_index.css">
-<title>Sethamus Prime</title>
+<script src="main-js.js"></script>
+<title>Sethamus.Prime</title>
 </head>
 
 <body>
@@ -12,13 +13,27 @@
 Hello, this is the beginning of my site. Very much a work in progress.
 <br/>
 <a href="https://github.com/dezmun/">Visit my Github.</a>
+<br/>
 </div>
 
 <div class="tabs">
-	<button class="tablink">Empty1</button>
-	<button class="tablink">Empty2</button>
-	<button class="tablink">Empty3</button>
+	<button class="tablinks" onclick="openTab(event, 'pokedex')">Pokédex</button>
+	<button class="tablinks" onclick="openTab(event, 'empty2')">Empty 2</button>
+	<button class="tablinks" onclick="openTab(event, 'empty3')">Empty 3</button>
 </div>
 
+<!--Pokédex-->
+<div id="pokedex" class="tabcontent">
+	<h3>Pokédex</h3>
+</div>
+
+<!--Empty 2-->
+<div id="empty2" class="tabcontent">
+	<h3>Empty 2</h3>
+</div>
+
+<!--Empty 3-->
+<div id="empty3" class="tabcontent">
+	<h3>Empty 3</h3>
+</div>
 </body>
-</html>

@@ -14,6 +14,7 @@ div.tabs{
 	overflow: hidden;
 	background-color: #522832;
 	font-family: "Lucida Console";
+	border: none;
 }
 div.tabs button{
 	cursor: crosshair;
@@ -31,5 +32,14 @@ div.tabs button{
 	border: none;
 	outline: none;
 	font-family: "Lucida Console";
-	font-size: 21px;	
+	font-size: 20px;	
+}
+div.tabs button.active{
+	background-color: #8b652c;
+}
+div.tabcontent{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #8b652c;
+	border-top: none;
 }
