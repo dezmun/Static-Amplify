@@ -6,16 +6,16 @@ body {
 /*Main Title*/
 div.titlebar{
 	background-color: #05060A;
-	color: white;
 	text-align: center;
-	font-family: "Lucida Console";
 	font-size: 20px;
+	float: top-left;
 }
 /*Tab Links*/
 div.tabs{
 	overflow: hidden;
 	background-color: #522832;
 	border: none;
+	float: top-left;
 }
 div.tabs button{
 	background-color: inherit;
@@ -28,7 +28,7 @@ div.tabs button{
 	font-size: 20px;
 }
 /*tab hover*/
-.tabs button:hover{
+div.tabs button:hover{
 	background-color: #05060A;
 	color: white;
 	border: none;
@@ -44,5 +44,4 @@ div.tabcontent{
 	display: none;
 	padding: 6px 12px;
 	border: 1px solid #8b652c;
-	border-top: none;
 }
