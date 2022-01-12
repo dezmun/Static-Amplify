@@ -1,5 +1,7 @@
 body {
   background-color: #283252;
+  font-family: Arial;
+  color: white;
 }
 /*Main Title*/
 div.titlebar{
@@ -19,10 +21,11 @@ div.tabs{
 div.tabs button{
 	cursor: crosshair;
 	overflow: hidden;
-	background-color: #522832;
+	background-color: inherit;
 	border: none;
 	outline: none;
 	padding: 14px 16px;
+	transition: 0.3s;
 	font-size: 20px;
 }
 /*tab hover*/
@@ -37,6 +40,9 @@ div.tabs button{
 div.tabs button.active{
 	background-color: #8b652c;
 }
+/*div.tabs button.visited{
+	background-color: #522832;
+}*/
 div.tabcontent{
 	display: none;
 	padding: 6px 12px;
