@@ -15,15 +15,14 @@ div.titlebar{
 div.tabs{
 	overflow: hidden;
 	background-color: #522832;
-	font-family: "Lucida Console";
 	border: none;
 }
 div.tabs button{
-	cursor: crosshair;
-	overflow: hidden;
 	background-color: inherit;
+	float: left;
 	border: none;
 	outline: none;
+	cursor: crosshair;
 	padding: 14px 16px;
 	transition: 0.3s;
 	font-size: 20px;
@@ -34,15 +33,13 @@ div.tabs button{
 	color: white;
 	border: none;
 	outline: none;
-	font-family: "Lucida Console";
+	padding: 14px 16px;
+	transition: 0.3s;
 	font-size: 20px;	
 }
 div.tabs button.active{
 	background-color: #8b652c;
 }
-/*div.tabs button.visited{
-	background-color: #522832;
-}*/
 div.tabcontent{
 	display: none;
 	padding: 6px 12px;
