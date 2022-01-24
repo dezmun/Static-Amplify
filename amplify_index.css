@@ -1,3 +1,9 @@
+img {
+	width: 60px;
+	height: 60px;
+	float: left;
+	padding-right: 5px;
+}
 body {
   background-color: #283252;
   font-family: Arial;
@@ -15,7 +21,6 @@ div.tabs{
 	overflow: hidden;
 	background-color: #522832;
 	border: none;
-	float: top-left;
 }
 div.tabs button{
 	background-color: inherit;
