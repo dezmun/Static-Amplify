@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="amplify_index.css">
-<script src="main-js.js"></script>
-<script src="">"jquery-3.6.0"</script>
-<title>Sethamus.Prime</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="amplify_index.css">
+	<script src="main-js.js"></script>
+	<script src="">"jquery-3.6.0"</script>
+	<title>Sethamus.Prime</title>
 </head>
 
 <body>
 
-<div class="titlebar">
-	<img src="images/sp7.png" alt="botFace">
-	<br/>
-	Hello, this is the beginning of my site. Very much a work in progress.
-<br/>
-<a href="https://github.com/dezmun/">Visit my Github.</a>
-<br/>
-</div>
+	<div class="titlebar">
+		<img class="botFace" src="images/sp7.png" alt="botFace">
+		<br />
+		Hello, this is the beginning of my site. Very much a work in progress.
+		<br />
+		<a href="https://github.com/dezmun/">Visit my Github.</a>
+		<br />
+	</div>
 
-<div class="tabs">
-	<button class="tablinks" onclick="openTab(event, 'pokedex')">Pok&#233dex</button>
-	<button class="tablinks" onclick="openTab(event, 'empty2')">Empty 2</button>
-	<button class="tablinks" onclick="openTab(event, 'empty3')">Empty 3</button>
-</div>
+	<div class="tabs">
+		<button class="tablinks" onclick="openTab(event, 'pokedex')">Pok&#233dex</button>
+		<button class="tablinks" onclick="openTab(event, 'tetris')">Tetris</button>
+		<button class="tablinks" onclick="openTab(event, 'bwdb')">Beast Wars DB</button>
+	</div>
 
-<!--Pokédex-->
-<div id="pokedex" class="tabcontent">
-	<h3>This is a search box that will take you to the veekun Pok&#233dex.</h3>
-	<h3>I intend to make this page into a full saerchable Pok&#233dex in which the results will appear on the page, but this will do for now.</h3>
+	<!--Pokédex-->
+	<div id="pokedex" class="tabcontent">
+		<h3>This is a search box that will take you to the veekun Pok&#233dex.</h3>
+		<h3>I intend to make this page into a full saerchable Pok&#233dex in which the results will appear on the page,
+			but this will do for now.</h3>
 
-	<form id="veekun-pokedex-lookup" method="GET" action="https://veekun.com/dex/lookup" style="overflow: hidden; margin: 0.5em 0; padding: 0; padding-left: 20px; min-height: 40px;">
-		<p style="font-size: 1.33em; float: left; margin: 0; padding: 0; padding-right: 20px; white-space: nowrap;
+		<form id="veekun-pokedex-lookup" method="GET" action="https://veekun.com/dex/lookup"
+			style="overflow: hidden; margin: 0.5em 0; padding: 0; padding-left: 20px; min-height: 40px;">
+			<p style="font-size: 1.33em; float: left; margin: 0; padding: 0; padding-right: 20px; white-space: nowrap;
 			background: url(https://veekun.com/static/local/images/layout/pokedex-teeny.png) right center no-repeat;">
-		<label>
-			<img src="https://veekun.com/static/local/images/embed-logo.png" style="vertical-align: middle;" />
-			<a href="https://veekun.com/">veekun</a> Pok&eacute;dex: <br/>
-			<a href="https://veekun.com/dex" style="float: left; margin-left: -20px;">
-			<img src="https://veekun.com/static/spline/icons/question-white.png" alt="Help" title="Help!" style="border: none; vertical-align: middle;"></a>
-			<input type="text" name="lookup" class="dex-lookup js-dex-suggest" style="width: 12em; vertical-align: middle; "/>
-		</label>
+				<label>
+					<img src="https://veekun.com/static/local/images/embed-logo.png" style="vertical-align: middle;" />
+					<a href="https://veekun.com/">veekun</a> Pok&#233;dex: <br />
+					<a href="https://veekun.com/dex" style="float: left; margin-left: -20px;">
+						<img src="https://veekun.com/static/spline/icons/question-white.png" alt="Help" title="Help!"
+							style="border: none; vertical-align: middle;"></a>
+					<input type="text" name="lookup" class="dex-lookup js-dex-suggest"
+						style="width: 12em; vertical-align: middle; " />
+				</label>
 
-		<input type="submit" value="Look up" style="vertical-align: middle; cursor: pointer;" /></p>
-	</form>
-	<script type="text/javascript" src="https://veekun.com/static/local/script/embed-veekun-lookup.js"></script>
-</div>
+				<input type="submit" value="Look up" style="vertical-align: middle; cursor: pointer;" />
+			</p>
+		</form>
+		<script type="text/javascript" src="https://veekun.com/static/local/script/embed-veekun-lookup.js"></script>
+	</div>
 
-<!--Empty 2-->
-<div id="empty2" class="tabcontent">
-	<h3>Empty 2</h3>
-</div>
+	<!--Empty 2-->
+	<div id="tetris" class="tabcontent">
+		<h3>Tetris Game</h3>
+	</div>
 
-<!--Empty 3-->
-<div id="empty3" class="tabcontent">
-	<h3>Empty 3</h3>
-	<h1>THIS IS LEES FAVORITE!!!!</h1>
-</div>
+	<!--Empty 3-->
+	<div id="bwdb" class="tabcontent">
+		<h3>Beast Wars DB</h3>
+		<h3>This will be a small NoSQL DynamoDB of my old Beast Wars collection from my child hood.</h3>
+	</div>
 </body>
