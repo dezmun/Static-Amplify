@@ -1,5 +1,7 @@
+"use strict";
+
 function openTab(evt, pageName){
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for(i=0;i<tabcontent.length;i++){
@@ -14,3 +16,8 @@ function openTab(evt, pageName){
     document.getElementById(pageName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function imageSwap(){
+    document.getElementById("dex").src = "images/kanto-pokedex-open.png";
+    document.getElementById("dex").style.width = '474px';
+    }

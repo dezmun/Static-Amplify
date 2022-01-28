@@ -1,9 +1,24 @@
+/*Image located in header*/
 img.botFace {
 	width: 60px;
 	height: 60px;
 	float: left;
 	padding-right: 5px;
 }
+
+/*Tab Images:*/
+#dex{
+	width: 240px;
+	height: 360px;
+}
+#bwImg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/*MAIN BODY STYLING*/
 body {
   background-color: #283252;
   font-family: Arial;
