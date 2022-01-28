@@ -1,5 +1,5 @@
 /*Image located in header*/
-img.botFace {
+#botFace {
 	width: 60px;
 	height: 60px;
 	float: left;
