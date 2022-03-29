@@ -19,5 +19,6 @@ function openTab(evt, pageName){
 
 function imageSwap(){
     document.getElementById("dex").src = "images/kanto-pokedex-open.png";
+    document.getElementById("dex").style.transition = '474px';
     document.getElementById("dex").style.width = '474px';
-    }
+}
